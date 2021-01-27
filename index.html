@@ -26,48 +26,45 @@
     </div>
 
     <div class="container">
-        <div class="alert alert-danger" role="alert" style="margin-top: 1cm;">
-            Some fields are missing!
-        </div>
-        <form>  <!--method="POST" action="" --> 
+        <form id="forma">  <!--method="POST" action="" --> 
             <div class="row">
                 <div class="col-6">
                      <p>Credit Card Number*</p>
                      <label  for="ccn"></label>
-                     <input id="ccn"  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                     <input id="tarjeta"  type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                 </div>
                 <div class="col-3">
                      <p>CVC #*</p>
                      <label for="ccn"></label>
-                     <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="0000">
+                     <input id="cvc" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="0000">
                 </div>
                 <div class="col-3">
                      <p>Amount*</p>
                      <label for="ccn"></label>
-                     <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="$ Amount"> 
+                     <input id="monto" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="$ Amount"> 
 
                 </div>
                 <!-- <i class="fab fa-cc-visa"></i> -->
             </div>
             <div class="row">
                 <div class="col">
-                    <p>First Name*</p> <input name="Name" type="text" value="" />
+                    <p>First Name*</p> <input id = "nombre" name="Name" type="text" value="" />
                 </div>
                 <div class="col">
-                    <p> Last Name* </p><input name="Lastname" type=”text” value="" />
+                    <p> Last Name* </p><input id="apellido" name="Lastname" type=”text” value="" />
                 </div>
             </div>
             <div class="row ">
                 <div class="col-6">
                     <p>City* </p>
-                     <input name="City" type="text" value="" />
+                     <input id="ciudad" name="City" type="text" value="" />
                 </div>
                 <div class="col">
-                    <p>State</p>
+                    <p>State*</p>
                                 <label>
                                     <State></State>
                                 </label>
-                                <select>
+                                <select id="estado">
                                     <option>Pick a State</option>
                                     <option>Florida</option>
                                     <option>New York</option>
@@ -76,11 +73,11 @@
 
                 </div>
                 <div class="col">
-                    <p>Postal Code*</p> <input name="Postal Code" type="text" value="" />
+                    <p>Postal Code*</p> <input id="postal" name="Postal Code" type="text" value="" />
                 </div>
                  <div class="mensaje">
-                     <p> Message*
-                     </p> <textarea rows="3" cols="60"  placeholder="Write your Message"></textarea>
+                     <p> Message
+                     </p> <textarea rows="3" cols="27"  placeholder="Write your Message"></textarea>
                      <div class="derecha">Add any notes here</div> 
                  </div>
             </div>    
@@ -107,15 +104,26 @@
                     </div>
                 </div>    
             </div>
+            <div class="row bg-light">
+                <div class="col-9">
+                </div>
+                <div class="col-2">
+                    <input class="btn btn-primary bg-secondary" type="button" value="Cancel">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </div>
+            </div>       
         </form>
     </div>
 
-    <div class="container" style="margin-top:10cm ;">
+    <!-- <div class="container" style="margin-top:10cm ;">
         <div class="row1">
             <button type="button" class="btn btn-secondary">Cancel</button>
             <button type="button" class="btn btn-primary">Send</button>
         </div>
-    </div>
-   
+    </div> -->
+
+         
+        
+<script src="./index.js"></script>
 </body>
 </html>
